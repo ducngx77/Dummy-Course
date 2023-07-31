@@ -1,0 +1,5 @@
+- Change database: For table Quiz, QuizQuestion, QuizResult, QuizResultQuestion. The PRIMARY KEY is changed into varchar (32)
+- Devide sql into add data, table, functions-view
+- Change database: (User add bio field). Change package hirarchy
+- Change database: Add tables : QuizClassification, QuizQuestionClassification
+- Change database: Remove label from quiz question

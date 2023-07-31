@@ -1,0 +1,233 @@
+:root {
+    --subColor: lightsalmon;
+    --mainColor: #fd823f;
+    --backgroundColor: #ffffff;
+    --hoverColor: lightgray;
+    --navHeight: 55px;
+    --contentMarginTop: 100px;
+    --sideExpandWitdh: 200px;
+    --sideCollapsedWidth: 20px;
+    --iconSize: 30px;
+    --iconHoverSize: 40px;
+    --iconMargin: 5px 5px;
+    --iconHoverMargin: 0px 0px;
+    --borderColor: lightgrey;
+    --textMainColor: #000000;
+    --textSubColor: #898b96;
+    --sidebarBGC: #fff;
+}
+
+.iButton {
+    color: var(--mainColor);
+    border: 1px solid var(--borderColor);
+    background-color: var(--backgroundColor);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    font-size: 10px;
+    padding: 10px 5px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    justify-content: center;
+    transition: all linear 0.25s;
+    cursor: pointer;
+}
+
+.content-page {
+    background-color: var(--backgroundColor);
+    position: absolute;
+    display: flex;
+    right: 0;
+    top: var(--contentMarginTop);
+    left: var(--sideCollapsedWidth);
+    margin-left: 0;
+    transition: all linear 0.25s;
+}
+
+
+.wrap-content {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#breadcrumb ul {
+    list-style: none;
+    display: inline-table;
+    padding-inline-start: 1px;
+    font-size: 12px;
+    margin-block-start: 6px;
+    margin-block-end: 6px;
+}
+#breadcrumb li {
+    display: inline;
+}
+#breadcrumb a {
+    float: left;
+    background: var(--borderColor);
+    padding: 3px 10px 3px 20px;
+    position: relative;
+    margin: 0 5px 0 0;
+    text-decoration: none;
+    color: #555;
+}
+#breadcrumb a:after {
+    content: "";
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 12px solid var(--borderColor);
+    position: absolute;
+    right: -12px;
+    top: 0;
+    z-index: 1;
+}
+#breadcrumb a:before {
+    content: "";
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 12px solid var(--backgroundColor);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all linear 0.25s;
+}
+#breadcrumb ul li:first-child a:before {
+    display: none;
+    transition: all linear 0.25s;
+}
+#breadcrumb ul:last-child li{
+    padding-right: 5px;
+    transition: all linear 0.25s;
+}
+#breadcrumb ul li a:hover {
+    background: var(--subColor);
+    color: var(--backgroundColor);
+    transition: all linear 0.25s;
+}
+#breadcrumb ul li a:hover:after {
+    border-left-color: var(--subColor);
+    color: var(--backgroundColor);
+    transition: all linear 0.25s;
+}
+#breadcrumb li:last-child {
+    display: inline-block!important;
+    margin-top: 3px!important;
+    transition: all linear 0.25s;
+}
+
+form input:focus,
+form textarea:focus,
+form button:focus {
+    outline: none;
+}
+
+
+.input {
+    background-color: unset;
+    border: unset;
+}
+
+.button {
+    background-color: unset;
+    border: unset;
+}
+
+.nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.side a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon {
+    font-size: var(--iconSize);
+    margin: var(--iconMargin);
+    color: var(--mainColor);
+    transition: all linear 0.25s;
+}
+
+.icon:hover {
+    font-size: var(--iconHoverSize);
+    margin: var(--iconHoverMargin);
+    color: var(--mainColor);
+    transition: all linear 0.25s;
+}
+
+.popup-box {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: calc(var(--navHeight) - 3px);
+    background-color: var(--backgroundColor);
+    z-index: -1;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    position: fixed;
+    transition: all linear 0.25s;
+    /*display: none;*/
+}
+
+.wrap-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 1400px) {
+    .content-page {
+        justify-content: center;
+    }
+
+    .wrap-content {
+        display: flex;
+        max-width: 1400px;
+        width: 100%;
+    }
+}
+
+.item-header {
+
+    font-weight: bold;
+}
+
+.item-content {
+    margin: 0 0 5px 10px;
+}
+
+.review-item {
+    background: #f0f0f0;
+    border-radius: 5px;
+
+}
+
+.drop-button {
+    /*    No border, no background*/
+    border: none;
+    background: none;
+    color: var(--mainColor);
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    margin: 0 0 0 10px;
+}
+
+.drop-button:focus {
+    outline: none;
+}
+
+.separator {
+    width: 100%;
+    height: 1px;
+    background: var(--mainColor);
+    margin: 10px 0 10px 0;
+}

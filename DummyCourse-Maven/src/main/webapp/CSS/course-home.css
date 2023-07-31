@@ -1,0 +1,43 @@
+:root {
+    --subColor: lightsalmon;
+    --mainColor: #fd663f;
+    --backgroundColor: #ffffff;
+    --hoverColor: lightgray;
+    --sideExpandWitdh: 200px;
+    --sideCollapsedWidth: 20px;
+    --iconSize: 30px;
+    --iconHoverSize: 40px;
+    --iconMargin: 0px 5px;
+    --iconHoverMargin: 0px 0px;
+    --borderColor: lightgrey;
+    --sidebarBGC: #f0f1f2;
+    --content-wrapper: #FFFDFD;
+}
+
+.type-wrapper {
+    display: flex;
+
+    background-color: var(--content-wrapper);
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coursetype-section-wrapper h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    color: var(--mainColor);
+}
+
+.coursetype-section-wrapper {
+    display: flex;
+    width: 800px;
+    margin: 50px 0 0 0;
+    max-width: 1400px;
+}

@@ -1,0 +1,319 @@
+.courseContainer {
+    margin: 5px 50px 30px 50px;
+    display: inline-block;
+    background-color: var(--backgroundColor);
+    box-shadow: 0 0 5px var(--borderColor);
+    overflow: auto;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+#noticeBox {
+    display: inline-block;
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    max-height: 60%;
+}
+
+#noticeBtn {
+    transition: all linear 0.25s;
+    display: flex;
+    /*display: inline-block;*/
+    /*position: absolute;*/
+    /*right: 0px; */
+    float: right;
+    /*justify-content: right;*/
+    margin-right: 0px;
+}
+
+#noticeBoxInput:checked ~ #noticeBtn {
+    transform: rotate(180deg);
+    transition: all linear 0.25s;
+}
+
+#courseName {
+    justify-content: center;
+    text-align: center;
+    border-bottom: 2px solid var(--subColor);
+    box-shadow: none;
+}
+
+.courseNoticeList {
+    display: block;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    max-height: 70px;
+    transition: all linear 0.25s;
+}
+
+#updateCourseForm{
+    padding-left: 50px;
+}
+
+#updateCourseForm form input[type="text"]{
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 0 5px var(--subColor);
+    width: 300px;
+    margin: 5px 5px;
+}
+
+#updateCourseForm form select{
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 0 5px var(--subColor);
+    width: 300px;
+    margin: 5px 5px;
+}
+
+#noticeBoxInput:checked ~ .courseNoticeList {
+    overflow-y: auto;
+    /*height: 400px;*/
+    max-height: 400px;
+    transition: all linear 0.25s;
+}
+
+.courseNoticeList .row {
+    padding: 5px 5px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--subColor);
+}
+
+
+.noticeMess {
+    border-left: 1px solid var(--mainColor);
+}
+
+.courseSection {
+    display: inline-block;
+    width: 100%;
+    background-color: var(--sidebarBGC);
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 10px 0px;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 5px var(--borderColor);
+}
+
+.editTable {
+    justify-content: normal;
+    text-align: left;
+}
+
+.courseSection h5 {
+    text-align: left;
+}
+
+.sectionMaterial {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.sectionTest {
+    text-align: left;
+    border-left: 2px solid var(--mainColor);
+}
+
+.courseNoticeList .row {
+    padding: 5px 5px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--subColor);
+}
+
+.sectionTest .viewResult {
+
+    border-left: 2px solid var(--mainColor);
+}
+
+#createSection {
+    justify-content: center;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.sectionCreationBox {
+    justify-content: normal;
+    text-align: left;
+    margin: 10px 10px;
+    border-bottom: 2px solid var(--subColor);
+}
+
+.formPart {
+    margin-bottom: 10px;
+}
+
+.formPart input {
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px var(--subColor);
+    width: 40%;
+    height: 40px;
+}
+
+#checkInput {
+    width: fit-content;
+    background-color: var(--mainColor);
+}
+
+.moreSection {
+    display: inline-block;
+    width: 200px;
+    background-color: var(--backgroundColor);
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.moreSection:hover {
+    background-color: var(--subColor);
+    color: var(--backgroundColor);
+}
+
+.submitBtn input {
+    background-color: var(--mainColor);
+    color: var(--backgroundColor);
+    font-size: 25px;
+    margin-top: 20px;
+    width: 100px;
+    height: 50px;
+}
+
+.editTableOption {
+    border-bottom: 1px solid var(--subColor);
+}
+
+.editTableOption ul {
+    /*margin-left: 20px;*/
+    padding-left: 20px;
+}
+
+.editTableOption ul li{
+    /*margin-left: 20px;*/
+    padding-left: 20px;
+    color: var(--subColor);
+    cursor: pointer;
+}
+
+#courseInfoBox{
+    justify-content: left;
+    text-align: left;
+}
+
+#courseLecturerLink{
+    text-decoration: none;
+    color: inherit;
+}
+
+#courseLecturerLink:hover{
+    text-decoration: underline;
+    color: var(--subColor);
+
+}
+
+.ratingLabel {
+    cursor: pointer;
+    font-size: 25px;
+    margin: 10px 5px 10px 5px;
+    transition: all linear 0.25s;
+}
+
+.ratingLabel:hover {
+    font-size: 35px;
+    margin: 0 5px;
+    transition: all linear 0.15s;
+}
+
+.ratingLabel.checked {
+    font-size: 35px;
+    margin: 0 5px;
+    transition: all linear 0.15s;
+}
+
+#rateLabel1.checked{
+    color: red;
+}
+
+#rateLabel1:hover{
+    color: red;
+}
+
+#rateLabel2.checked{
+    color: orange;
+}
+
+#rateLabel2:hover{
+    color: orange;
+}
+
+#rateLabel3.checked{
+    color: #FFD700;
+}
+
+#rateLabel3:hover{
+    color: #FFD700;
+}
+
+#rateLabel4.checked{
+    color: green;
+}
+
+#rateLabel4:hover{
+    color: green;
+}
+
+#rateLabel5.checked{
+    color: limegreen;
+}
+
+#rateLabel5:hover{
+    color: limegreen;
+}
+
+#rate1:checked ~ #rateLabel1{
+    color: red;
+}
+
+#rate2:checked ~ #rateLabel2{
+    color: orange;
+}
+
+#rate3:checked ~ #rateLabel3{
+    color: #FFD700;
+}
+
+#rate4:checked ~ #rateLabel4{
+    color: green;
+}
+
+#rate5:checked ~ #rateLabel5{
+    color: limegreen;
+}
+
+.btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 52px;
+    border: 1.5px solid #494b52;
+    border-radius: 16px;
+    padding: 0 28px 2px;
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

@@ -1,0 +1,525 @@
+/**{*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    box-sizing: content-box ;*/
+/*}*/
+.homeContainer {
+    margin: 5px 20px 30px 20px;
+    display: inline-block;
+    background-color: #F4F5F7;
+    box-shadow: 0 0 5px var(--borderColor);
+    overflow: auto;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.banner {
+    display: block;
+    width: 100%;
+    box-shadow: 0 5px 5px var(--borderColor);;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+.wrap-courseCategory h5 {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 0 5px;
+    border-radius: 4px;
+}
+
+#lecturerNotice {
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+#cate-check-text{
+    display: none;
+}
+
+#cate-check-submit{
+    display: none;
+}
+
+#cate-check-input:checked ~ #cate-check-text{
+    display: inline-block;
+}
+
+#cate-check-input:checked ~ #cate-check-submit{
+    display: inline-block;
+}
+
+.lecturerNote li {
+    padding-left: 50px;
+}
+
+.admin-box {
+    padding: 0 5px;
+}
+
+#cate-add-display{
+    color: var(--subColor);
+    transition: all linear 0.2s;
+}
+
+.wrap-admin-box {
+    background-color: var(--backgroundColor);
+    padding: 5px 25px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px var(--borderColor);
+}
+
+.cate-option{
+    background-color: var(--backgroundColor);
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    margin: 5px 5px;
+    padding: 0 50px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px var(--borderColor);
+}
+
+.cate-option-choice{
+    display: inline-block;
+}
+
+.cate-option-choice input[type="radio"]:checked ~ label{
+    background: var(--mainColor);
+    color: var(--backgroundColor);
+    transition: all linear 0.2s;
+}
+
+.wrap-courseCategory a {
+    display: inline-block;
+    margin-bottom: 15px;
+    position: absolute;
+    right: 50px;
+    color: var(--subColor);
+}
+
+
+.cate-edit-btn{
+    color: var(--subColor);
+    border-radius: 4px;
+}
+.cate-edit-btn:hover{
+    color: var(--backgroundColor);
+    background-color: var(--subColor);
+    cursor: pointer;
+}
+
+
+.adminCourseRow{
+    /*background-color: var(--borderColor);*/
+    /*border-radius: 4px;*/
+    /*margin-bottom: 5px;*/
+    border-bottom: 1px solid var(--borderColor);
+}
+
+#homeMessage {
+    margin: 5px 5px 0px 5px;
+    width: 90%;
+    text-align: center;
+    align-items: center;
+}
+
+#newFeature {
+    display: block;
+}
+
+#newFeature h2 {
+    margin-left: 10px;
+}
+
+#category {
+    display: inline-block;
+    width: 100%;
+}
+
+#cate-nav {
+    display: flex;
+    width: fit-content;
+    overflow-x: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+#feedback {
+    background-color: var(--backgroundColor);
+}
+
+#category {
+    background-color: var(--backgroundColor);
+    margin: 5px 20px 0px 20px;
+}
+
+#cate-nav a {
+    text-decoration: none;
+    /*color: black;*/
+}
+
+.cateInput {
+    border: none;
+    margin: 0px 5px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+.cateInput:hover {
+    background-color: var(--subColor);
+    color: var(--backgroundColor);
+}
+
+#category h5 {
+    margin: 0px 5px;
+}
+
+.cate {
+    background-color: var(--sidebarBGC);
+    margin-right: 10px;
+    min-width: 200px;
+    padding: 0px 20px;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+}
+
+.title {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.title h4 {
+    color: var(--subColor);
+}
+
+.title a {
+    position: absolute;
+    right: 50px;
+    font-size: 20px;
+    color: var(--subColor);
+}
+
+#category-box{
+    height: 250px;
+    overflow-y: auto;
+}
+
+#inActLecBox{
+    height: 250px;
+    overflow-y: auto;
+}
+
+#lecturerList {
+    display: inline-block;
+}
+
+.courseList {
+    display: flex;
+    margin: 0 0 30px 0;
+    background-color: var(--backgroundColor);
+}
+
+.lecturerList {
+    display: flex;
+    margin: 0 0 30px 0;
+    background-color: var(--backgroundColor);
+}
+
+.courses .item {
+    display: inline-block;
+    position: relative;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+.lecturer .item {
+    display: flex;
+    padding: 0 10px;
+    /*height: 200px;*/
+    margin-bottom: 20px;
+    /*border: 2px solid var(--borderColor);*/
+}
+
+.description {
+    font-size: 20px;
+}
+
+.wrap-course-item {
+    border: 1px solid var(--borderColor);
+    border-radius: 4px;
+    box-shadow: 0 0 3px var(--borderColor);
+    background-color: var(--backgroundColor);
+    padding: 0px 0px;
+}
+
+.courseTitle {
+    margin: 5px 0 2px 5px;
+    /*background-color: dodgerblue;*/
+    padding: 3px 5px 0 5px;
+    border-radius: 4px;
+    min-height: 50px;
+    border-bottom: 1px solid var(--borderColor);
+}
+
+.wrap-course-type-item {
+    border: 1px solid var(--borderColor);
+    border-radius: 4px;
+    box-shadow: 0 0 3px var(--borderColor);
+    background-color: var(--sidebarBGC);
+    padding: 5px 5px;
+}
+
+.courseTypeTitle {
+    text-align: center;
+}
+
+.course-type {
+    display: flex;
+}
+
+.ad-wrap-course-type-item {
+    border: 1px solid var(--borderColor);
+    box-shadow: 0 0 3px var(--borderColor);
+    background-color: var(--sidebarBGC);
+    border-radius: 4px;
+    width: 300px;
+    margin: 0 5px;
+    padding: 0 5px;
+}
+
+.wrap-lecturer-item {
+    border: 1px solid var(--borderColor);
+    border-radius: 4px;
+    box-shadow: 0 0 3px var(--borderColor);
+    background-color: var(--sidebarBGC);
+    padding: 10px 10px;
+}
+
+.lecturerTitle {
+    margin: 5px 5px;
+}
+
+.courseSum {
+    margin: 3px 0 0 5px;
+    border-bottom: 1px solid var(--borderColor);
+    min-height: 130px;
+
+}
+
+.lecturerSum {
+    margin: 5px 5px;
+    border-bottom: 1px solid var(--borderColor);
+    min-height: 110px;
+}
+
+.courseLink {
+    margin: 3px 0 0px 5px;
+}
+
+
+.wrap-course-item a {
+    color: var(--subColor);
+}
+
+.wrap-lecturer-item a {
+    color: var(--subColor);
+}
+
+#warp-pagination {
+    background-color: var(--subColor);
+    margin: 30px 5px 10px 5px;
+
+}
+
+.pagination {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin-top: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.pagination a {
+    float: left;
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 12px;
+    color: black;
+    margin-left: 5px;
+    /*border: 1px solid var(--mainColor);*/
+    line-height: 1.5;
+}
+
+#feedback-back-home{
+    background-color: var(--backgroundColor);
+    box-shadow: none;
+    border: none;
+}
+
+.feedbackContainer{
+    display: inline-block;
+    background-color: #F4F5F7;
+    box-shadow: 0 0 5px var(--borderColor);
+    overflow: auto;
+    padding: 5px 5px;
+    width: 100%;
+}
+
+.wrap-feedback{
+    background-color: var(--backgroundColor);
+    box-shadow: none;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 10px;
+}
+
+.feedback-row{
+    border-bottom: 1px solid var(--borderColor);
+}
+
+.feedback-title{
+    justify-content: center;
+    text-align: center;
+}
+
+.ratingLabel {
+    cursor: pointer;
+    font-size: 35px;
+    margin: 10px 5px 10px 5px;
+    transition: all linear 0.25s;
+}
+
+.ratingLabel:hover {
+    font-size: 45px;
+    margin: 0px 5px 0px 5px;
+    transition: all linear 0.15s;
+}
+
+.ratingLabel.checked {
+    font-size: 45px;
+    margin: 0px 5px 0px 5px;
+    transition: all linear 0.15s;
+}
+
+#rateLabel1.checked{
+    color: red;
+}
+
+#rateLabel1:hover{
+    color: red;
+}
+
+#rateLabel2.checked{
+    color: orange;
+}
+
+#rateLabel2:hover{
+    color: orange;
+}
+
+#rateLabel3.checked{
+    color: #FFD700;
+}
+
+#rateLabel3:hover{
+    color: #FFD700;
+}
+
+#rateLabel4.checked{
+    color: green;
+}
+
+#rateLabel4:hover{
+    color: green;
+}
+
+#rateLabel5.checked{
+    color: limegreen;
+}
+
+#rateLabel5:hover{
+    color: limegreen;
+}
+
+#rate1:checked ~ #rateLabel1{
+    color: red;
+}
+
+#rate2:checked ~ #rateLabel2{
+    color: orange;
+}
+
+#rate3:checked ~ #rateLabel3{
+    color: #FFD700;
+}
+
+#rate4:checked ~ #rateLabel4{
+    color: green;
+}
+
+#rate5:checked ~ #rateLabel5{
+    color: limegreen;
+}
+
+
+.feedback-text{
+    width: 300px;
+    height: 100px;
+    resize: none;
+    border-radius: 4px;
+    border: 1px solid var(--borderColor);
+    box-shadow: 0 0 5px var(--borderColor);
+}
+
+.pagination a:hover {
+    color: var(--backgroundColor);
+    background-color: var(--subColor);
+    text-decoration: none;
+}
+
+.pagination .active {
+    color: var(--backgroundColor);
+    background-color: var(--subColor);
+}
+
+.lecturerProfContainer {
+    display: inline-block;
+    background-color: var(--backgroundColor);
+    /*box-shadow: 0 0 5px var(--borderColor);*/
+    border-bottom: 1px solid var(--borderColor);
+    padding: 0px 15px;
+    width: 100%;
+}
+
+#lecProfHeader{
+    background-color: lightseagreen;
+    height: 200px;
+}
+
+.lecProfPic{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    border: 5px solid var(--subColor);
+    border-radius: 10px;
+    position: absolute;
+}
+
+#lecProfDetails{
+    color: var(--backgroundColor);
+}
+
+#lecProfCourse{
+    padding-top: 50px;
+}
+
+#lecProfReview{
+    padding-top: 50px;
+}
